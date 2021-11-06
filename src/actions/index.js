@@ -61,6 +61,7 @@ export const actUpdateProductRequest = (product) =>{
     return dispatch => {
         return callApi(`product/${product.id}` ,'PUT', product).then(res=>{
             dispatch(actUpdateProduct(res.data))
+     
         });
     }
 }
